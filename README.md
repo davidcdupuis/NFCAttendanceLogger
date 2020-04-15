@@ -1,6 +1,6 @@
 # NFCAttendanceLogger
 
-Our project report, written in English, is available at: [PDF Project Report]([SES][CLASS PROJECT]DUPUIS&ZELLNER.pdf).
+Our project report, written in English, is available at: [PDF Project Report](https://github.com/davidcdupuis/nfcattendancelogger/blob/master/%5BSES%5D%5BCLASS%20PROJECT%5DDUPUIS%26ZELLNER.pdf).
 
 ## Objective
 
@@ -22,38 +22,48 @@ My friend  (Thomas Zellner) and I used a Raspberry Pi 2 and a USB NFC u122c card
 
 We set up a SQL database on the PI to store the necessary information. We set up four tables: *ATTENDANCE*, *CLASS*, *TIMETABLE* and *USER*. (see <a href="#fig-1">Fig 1.</a>)
 
+<p>
 <figure id="fig-1" class="image" style="text-align:center">
   <img src="tables.png" alt="Fig 1. - SQL Tables">
   <figcaption >Fig 1. - SQL Tables</figcaption>
-</figure></br>
+</figure>
+</p>
 
 We instantiated a *USER* table with four users and their respective UIDs on their badges. (see <a href="#fig-2">Fig 2.</a>)
 
+<p>
 <figure id="fig-2" class="image" style="text-align:center">
   <img src="users.png" alt="Fig 2. - User Table">
   <figcaption >Fig 2. - User Table</figcaption>
-</figure></br>
+</figure>
+</p>
 
 We created a simple *TIMETABLE* table. In this case, student *11* has classes: *3,4,5 and 6*. (see <a href="#fig-3">Fig 3.</a>)
 
+<p>
 <figure id="fig-3" class="image" style="text-align:center">
   <img src="timetable.png" alt="Fig 3. - Timetable Table">
   <figcaption >Fig 3. - Timetable Table</figcaption>
-</figure></br>
+</figure>
+</p>
 
 We also set up some fake classes, in a *CLASS* table, with a name, date, start time and end time. (see <a href="#fig-4">Fig 4.</a>)
 
+<p>
 <figure id="fig-4" class="image" style="text-align:center">
   <img src="classes.png" alt="Fig 4. - Classes Table">
   <figcaption >Fig 4. - Classes Table</figcaption>
-</figure></br>
+</figure>
+</p>
 
 Students that attended class are logged in the *ATTENDANCE* table with their id and the class id they attended. (see <a href="#fig-5">Fig 5.</a>)
 
+<p>
 <figure id="fig-5" class="image" style="text-align:center">
   <img src="attendance.png" alt="Fig 5. - Attendance Table">
   <figcaption >Fig 5. - Attendance Table</figcaption>
-</figure></br>
+</figure>
+</p>
 
 ### Code
 
@@ -74,15 +84,19 @@ Our code is relatively simple and the process is straight forward.
 
 Following are two screenshots of our demo.
 
+<p>
 <figure id="fig-6" class="image" style="text-align:center">
   <img src="addUser.png" alt="Fig 6. - Adding a user">
   <figcaption >Fig 6. - Adding a user</figcaption>
-</figure></br>
+</figure>
+</p>
 
+<p>
 <figure id="fig-7" class="image" style="text-align:center">
   <img src="presence.png" alt="Fig 7. - Recording attendance">
   <figcaption >Fig 7. - Recording attendance</figcaption>
-</figure></br>
+</figure>
+</p>
 
 ## Challenges
 
